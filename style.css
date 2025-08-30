@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: moccasin; 
+}
+
+main {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relogio {
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    border-radius: 600px;
+    border: 15px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hora-ponteiro {
+    width: 13px;
+    height: 150px;
+    background-color: #222;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+
+.minuto-ponteiro {
+    width: 8px;
+    height: 200px;
+    background-color: #333;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.segundo-ponteiro {
+    width: 5px;
+    height: 240px;
+    background-color: #a52a2a;
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.centro {
+    width: 20px;
+    height: 20px;
+    background-color: #a52a2a;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.numero {
+    position: absolute;
+    font-size: 2rem;
+    transform-origin: center center; 
+}
+
+.numero-12 { transform: rotate(0deg) translateY(-250px) rotate(0deg); }
+.numero-1  { transform: rotate(30deg) translateY(-250px) rotate(-30deg); }
+.numero-2  { transform: rotate(60deg) translateY(-250px) rotate(-60deg); }
+.numero-3  { transform: rotate(90deg) translateY(-250px) rotate(-90deg); }
+.numero-4  { transform: rotate(120deg) translateY(-250px) rotate(-120deg); }
+.numero-5  { transform: rotate(150deg) translateY(-250px) rotate(-150deg); }
+.numero-6  { transform: rotate(180deg) translateY(-250px) rotate(-180deg); }
+.numero-7  { transform: rotate(210deg) translateY(-250px) rotate(-210deg); }
+.numero-8  { transform: rotate(240deg) translateY(-250px) rotate(-240deg); }
+.numero-9  { transform: rotate(270deg) translateY(-250px) rotate(-270deg); }
+.numero-10 { transform: rotate(300deg) translateY(-250px) rotate(-300deg); }
+.numero-11 { transform: rotate(330deg) translateY(-250px) rotate(-330deg); }
+
+
+@media (max-width: 768px) {
+    .relogio {
+        width: 400px;
+        height: 400px;
+        border-radius: 400px;
+    }
+    .hora-ponteiro {
+        width: 10px;
+        height: 100px;
+    }
+    .minuto-ponteiro {
+        width: 6px;
+        height: 130px;
+    }
+    .segundo-ponteiro {
+        width: 4px;
+        height: 150px;
+    }
+    .centro {
+        width: 16px;
+        height: 16px;
+    }
+    .numero {
+        font-size: 1.5rem;
+    }
+    .numero-12 { transform: rotate(0deg) translateY(-170px) rotate(0deg); }
+    .numero-1  { transform: rotate(30deg) translateY(-170px) rotate(-30deg); }
+    .numero-2  { transform: rotate(60deg) translateY(-170px) rotate(-60deg); }
+    .numero-3  { transform: rotate(90deg) translateY(-170px) rotate(-90deg); }
+    .numero-4  { transform: rotate(120deg) translateY(-170px) rotate(-120deg); }
+    .numero-5  { transform: rotate(150deg) translateY(-170px) rotate(-150deg); }
+    .numero-6  { transform: rotate(180deg) translateY(-170px) rotate(-180deg); }
+    .numero-7  { transform: rotate(210deg) translateY(-170px) rotate(-210deg); }
+    .numero-8  { transform: rotate(240deg) translateY(-170px) rotate(-240deg); }
+    .numero-9  { transform: rotate(270deg) translateY(-170px) rotate(-270deg); }
+    .numero-10 { transform: rotate(300deg) translateY(-170px) rotate(-300deg); }
+    .numero-11 { transform: rotate(330deg) translateY(-170px) rotate(-330deg); }
+}
+
+@media (max-width: 425px) {
+    .relogio {
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+    }
+    .hora-ponteiro {
+        width: 8px;
+        height: 75px;
+    }
+    .minuto-ponteiro {
+        width: 5px;
+        height: 100px;
+    }
+    .segundo-ponteiro {
+        width: 3px;
+        height: 120px;
+    }
+    .centro {
+        width: 12px;
+        height: 12px;
+    }
+    .numero {
+        font-size: 1.2rem;
+    }
+    .numero-12 { transform: rotate(0deg) translateY(-125px) rotate(0deg); }
+    .numero-1  { transform: rotate(30deg) translateY(-125px) rotate(-30deg); }
+    .numero-2  { transform: rotate(60deg) translateY(-125px) rotate(-60deg); }
+    .numero-3  { transform: rotate(90deg) translateY(-125px) rotate(-90deg); }
+    .numero-4  { transform: rotate(120deg) translateY(-125px) rotate(-120deg); }
+    .numero-5  { transform: rotate(150deg) translateY(-125px) rotate(-150deg); }
+    .numero-6  { transform: rotate(180deg) translateY(-125px) rotate(-180deg); }
+    .numero-7  { transform: rotate(210deg) translateY(-125px) rotate(-210deg); }
+    .numero-8  { transform: rotate(240deg) translateY(-125px) rotate(-240deg); }
+    .numero-9  { transform: rotate(270deg) translateY(-125px) rotate(-270deg); }
+    .numero-10 { transform: rotate(300deg) translateY(-125px) rotate(-300deg); }
+    .numero-11 { transform: rotate(330deg) translateY(-125px) rotate(-330deg); }
+}
